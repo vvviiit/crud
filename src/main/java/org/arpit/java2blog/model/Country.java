@@ -14,7 +14,7 @@ public class Country {
     @Column(name = "countryName")
     String countryName;
 
-    @Column(name = "population")
+    @Column(name = "populatio")
     long population;
 
     public Country() {
