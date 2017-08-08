@@ -1,6 +1,7 @@
 package org.arpit.java2blog.controller;
 
 import org.arpit.java2blog.model.Country;
+import org.arpit.java2blog.service.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,7 +40,7 @@ public class CountryController {
         } else {
             countryService.updateCountry(country);
         }
-        return "redirect:/getAllCounties";
+        return "redirect:/getAllCountries";
     }
 
     @RequestMapping(value = "/updateCountry/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
