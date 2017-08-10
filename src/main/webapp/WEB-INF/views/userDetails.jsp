@@ -4,27 +4,30 @@
 <html>
 <head>
     <style>
-        .blue-button{
+        .blue-button {
             background: #25A6E1;
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',endColorstr='#188BC0',GradientType=0);
-            padding:3px 5px;
-            color:#fff;
-            font-family:'Helvetica Neue',sans-serif;
-            font-size:12px;
-            border-radius:2px;
-            -moz-border-radius:2px;
-            -webkit-border-radius:4px;
-            border:1px solid #1A87B9
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#25A6E1', endColorstr='#188BC0', GradientType=0);
+            padding: 3px 5px;
+            color: #fff;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 4px;
+            border: 1px solid #1A87B9
         }
+
         table {
             font-family: "Helvetica Neue", Helvetica, sans-serif;
             width: 50%;
         }
+
         th {
             background: SteelBlue;
             color: white;
         }
-        td,th{
+
+        td, th {
             border: 1px solid gray;
             width: 25%;
             text-align: left;
@@ -39,7 +42,7 @@
             <th colspan="2">Add User</th>
         </tr>
         <tr>
-            <form:hidden path="id" />
+            <form:hidden path="id"/>
             <td><form:label path="name">User Name:</form:label></td>
             <td><form:input path="name" size="30" maxlength="30"></form:input></td>
         </tr>
@@ -53,7 +56,7 @@
         </tr>
         <tr>
             <td colspan="2"><input type="submit"
-                                   class="blue-button" /></td>
+                                   class="blue-button"/></td>
         </tr>
     </table>
 </form:form>
@@ -77,8 +80,8 @@
                 <td>${user.age}</td>
                 <td>${user.admin}</td>
                 <td>${user.createdDate.toString().substring(0,10)}</td>
-                <td><a href="<c:url value='/updateUser/${user.id}' />" >Edit</a></td>
-                <td><a href="<c:url value='/deleteUser/${user.id}' />" >Delete</a></td>
+                <td><a href="<c:url value='/updateUser/${user.id}' />">Edit</a></td>
+                <td><a href="<c:url value='/deleteUser/${user.id}' />">Delete</a></td>
             </tr>
         </c:forEach>
     </table>

@@ -40,10 +40,10 @@ public class UserDAO {
         session.update(user);
     }
 
-    public void deleteUser(int id){
+    public void deleteUser(int id) {
         Session session = this.sessionFactory.getCurrentSession();
         User p = (User) session.load(User.class, new Integer(id));
-        if (null!=p){
+        if (null != p) {
             session.delete(p);
         }
     }

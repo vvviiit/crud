@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Proxy(lazy=false)
+@Proxy(lazy = false)
 public class User {
     @Id
     @Column

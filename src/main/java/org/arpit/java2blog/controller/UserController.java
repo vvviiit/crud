@@ -44,7 +44,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/updateUser/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
-    public String updateUser(@PathVariable("id") int id, Model model){
+    public String updateUser(@PathVariable("id") int id, Model model) {
         model.addAttribute("user", this.userService.getUser(id));
         model.addAttribute("listOfUsers", this.userService.getAllUsers());
         return "userDetails";

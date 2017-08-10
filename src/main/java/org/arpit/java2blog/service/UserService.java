@@ -15,23 +15,27 @@ public class UserService {
     UserDAO userDAO;
 
     @Transactional
-    public List getAllUsers(){
+    public List getAllUsers() {
         return userDAO.getAllUsers();
     }
+
     @Transactional
-    public User getUser(int id){
-        return  userDAO.getUser(id);
+    public User getUser(int id) {
+        return userDAO.getUser(id);
     }
+
     @Transactional
-    public void addUser(User user){
+    public void addUser(User user) {
         userDAO.addUser(user);
     }
+
     @Transactional
-    public void updateUser(User user){
+    public void updateUser(User user) {
         userDAO.updateUser(user);
     }
+
     @Transactional
-    public void deleteUser(int id){
+    public void deleteUser(int id) {
         userDAO.deleteUser(id);
     }
 }
