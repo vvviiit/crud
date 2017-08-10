@@ -44,8 +44,12 @@
             <td><form:input path="name" size="30" maxlength="30"></form:input></td>
         </tr>
         <tr>
-            <td><form:label path="age">Population:</form:label></td>
+            <td><form:label path="age">Age:</form:label></td>
             <td><form:input path="age" size="30" maxlength="30"></form:input></td>
+        </tr>
+        <tr>
+            <td><form:label path="admin">Admin:</form:label></td>
+            <td><form:input path="admin" size="30" maxlength="30"></form:input></td>
         </tr>
         <tr>
             <td colspan="2"><input type="submit"
@@ -61,6 +65,8 @@
             <th width="80">Id</th>
             <th width="120">User Name</th>
             <th width="120">Age</th>
+            <th width="120">isAdmin</th>
+            <th width="120">CreatedDate</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
         </tr>
@@ -69,6 +75,8 @@
                 <td>${user.id}</td>
                 <td>${user.name}</td>
                 <td>${user.age}</td>
+                <td>${user.admin}</td>
+                <td>${user.createdDate.toString().substring(0,10)}</td>
                 <td><a href="<c:url value='/updateUser/${user.id}' />" >Edit</a></td>
                 <td><a href="<c:url value='/deleteUser/${user.id}' />" >Delete</a></td>
             </tr>
