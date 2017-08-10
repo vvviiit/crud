@@ -32,7 +32,7 @@
         <beans:property name="dataSource" ref="dataSource" />
         <beans:property name="annotatedClasses">
             <beans:list>
-                <beans:value>org.arpit.java2blog.model.Country</beans:value>
+                <beans:value>org.arpit.java2blog.model.User</beans:value>
             </beans:list>
         </beans:property>
         <beans:property name="hibernateProperties">

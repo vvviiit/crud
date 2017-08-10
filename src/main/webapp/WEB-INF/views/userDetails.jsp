@@ -33,19 +33,19 @@
     </style>
 </head>
 <body>
-<form:form method="post" modelAttribute="country" action="/SpringMVCHibernateCRUDExample/addCountry">
+<form:form method="post" modelAttribute="user" action="/SpringMVCHibernateCRUDExample/addUser">
     <table>
         <tr>
-            <th colspan="2">Add Country</th>
+            <th colspan="2">Add User</th>
         </tr>
         <tr>
             <form:hidden path="id" />
-            <td><form:label path="countryName">Country Name:</form:label></td>
-            <td><form:input path="countryName" size="30" maxlength="30"></form:input></td>
+            <td><form:label path="name">User Name:</form:label></td>
+            <td><form:input path="name" size="30" maxlength="30"></form:input></td>
         </tr>
         <tr>
-            <td><form:label path="population">Population:</form:label></td>
-            <td><form:input path="population" size="30" maxlength="30"></form:input></td>
+            <td><form:label path="age">Population:</form:label></td>
+            <td><form:input path="age" size="30" maxlength="30"></form:input></td>
         </tr>
         <tr>
             <td colspan="2"><input type="submit"
@@ -54,23 +54,23 @@
     </table>
 </form:form>
 </br>
-<h3>Country List</h3>
-<c:if test="${!empty listOfCountries}">
+<h3>User List</h3>
+<c:if test="${!empty listOfUsers}">
     <table class="tg">
         <tr>
             <th width="80">Id</th>
-            <th width="120">Country Name</th>
-            <th width="120">Population</th>
+            <th width="120">User Name</th>
+            <th width="120">Age</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
         </tr>
-        <c:forEach items="${listOfCountries}" var="country">
+        <c:forEach items="${listOfUsers}" var="user">
             <tr>
-                <td>${country.id}</td>
-                <td>${country.countryName}</td>
-                <td>${country.population}</td>
-                <td><a href="<c:url value='/updateCountry/${country.id}' />" >Edit</a></td>
-                <td><a href="<c:url value='/deleteCountry/${country.id}' />" >Delete</a></td>
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.age}</td>
+                <td><a href="<c:url value='/updateUser/${user.id}' />" >Edit</a></td>
+                <td><a href="<c:url value='/deleteUser/${user.id}' />" >Delete</a></td>
             </tr>
         </c:forEach>
     </table>

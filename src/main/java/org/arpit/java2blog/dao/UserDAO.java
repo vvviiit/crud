@@ -1,6 +1,6 @@
 package org.arpit.java2blog.dao;
 
-import org.arpit.java2blog.model.Country;
+import org.arpit.java2blog.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class CountryDAO {
+public class UserDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
@@ -17,32 +17,32 @@ public class CountryDAO {
         this.sessionFactory = sf;
     }
 
-    public List getAllCountries() {
+    public List getAllUsers() {
         Session session = this.sessionFactory.getCurrentSession();
-        List countryList = session.createQuery("from Country").list();
-        return countryList;
+        List userList = session.createQuery("from User").list();
+        return userList;
     }
 
-    public Country getCountry(int id) {
+    public User getUser(int id) {
         Session session = this.sessionFactory.getCurrentSession();
-        Country country = (Country) session.load(Country.class, new Integer(id));
+        User country = (User) session.load(User.class, new Integer(id));
         return country;
     }
 
-    public Country addCountry(Country country) {
+    public User addUser(User user) {
         Session session = this.sessionFactory.getCurrentSession();
-        session.persist(country);
-        return country;
+        session.persist(user);
+        return user;
     }
 
-    public void updateCountry(Country country) {
+    public void updateUser(User user) {
         Session session = this.sessionFactory.getCurrentSession();
-        session.update(country);
+        session.update(user);
     }
 
-    public void deleteCountry(int id){
+    public void deleteUser(int id){
         Session session = this.sessionFactory.getCurrentSession();
-        Country p = (Country) session.load(Country.class, new Integer(id));
+        User p = (User) session.load(User.class, new Integer(id));
         if (null!=p){
             session.delete(p);
         }
