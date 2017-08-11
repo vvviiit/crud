@@ -65,14 +65,5 @@ public class User {
         this.createdDate = createdDate;
     }
 
-    public User() {
-    }
 
-    public User(String name, int age, boolean isAdmin, Date createdDate) {
-
-        this.name = name;
-        this.age = age;
-        this.isAdmin = isAdmin;
-        this.createdDate = createdDate;
-    }
 }

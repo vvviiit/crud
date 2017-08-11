@@ -25,8 +25,8 @@ public class UserDAO {
 
     public User getUser(int id) {
         Session session = this.sessionFactory.getCurrentSession();
-        User country = (User) session.load(User.class, new Integer(id));
-        return country;
+        User user = (User) session.load(User.class, id);
+        return user;
     }
 
     public User addUser(User user) {
@@ -42,7 +42,7 @@ public class UserDAO {
 
     public void deleteUser(int id) {
         Session session = this.sessionFactory.getCurrentSession();
-        User p = (User) session.load(User.class, new Integer(id));
+        User p = (User) session.load(User.class, id);
         if (null != p) {
             session.delete(p);
         }
