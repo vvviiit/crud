@@ -2,6 +2,7 @@ package org.arpit.java2blog.service;
 
 import org.arpit.java2blog.dao.UserDAO;
 import org.arpit.java2blog.model.User;
+import org.arpit.java2blog.model.UserPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,5 +38,10 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public void deleteUser(int id) {
         userDAO.deleteUser(id);
+    }
+
+    @Transactional
+    public UserPage getUsers(final Integer page) {
+        return userDAO.listPage(page);
     }
 }

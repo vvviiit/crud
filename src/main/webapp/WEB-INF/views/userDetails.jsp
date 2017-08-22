@@ -61,6 +61,9 @@
     </table>
 </form:form>
 </br>
+
+<a href="${pageContext.request.contextPath}/listPage/0">User pages</a><br/>
+
 <h3>User List</h3>
 <c:if test="${!empty listOfUsers}">
     <table class="tg">

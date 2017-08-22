@@ -1,6 +1,7 @@
 package org.arpit.java2blog.dao;
 
 import org.arpit.java2blog.model.User;
+import org.arpit.java2blog.model.UserPage;
 
 import java.util.List;
 
@@ -14,4 +15,6 @@ public interface UserDAO {
     public void updateUser(User user);
 
     public void deleteUser(int id);
+
+    public UserPage listPage(Integer page);
 }

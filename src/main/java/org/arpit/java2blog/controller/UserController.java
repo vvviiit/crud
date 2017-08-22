@@ -1,6 +1,7 @@
 package org.arpit.java2blog.controller;
 
 import org.arpit.java2blog.model.User;
+import org.arpit.java2blog.model.UserPage;
 import org.arpit.java2blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -54,5 +56,16 @@ public class UserController {
     public String deleteUser(@PathVariable("id") int id) {
         userService.deleteUser(id);
         return "redirect:/getAllUsers";
+    }
+
+    @RequestMapping(value = "/listPage/{page}")
+    public ModelAndView listPage(final @PathVariable Integer page) {
+        ModelAndView modelAndView = new ModelAndView("page-of-users");
+
+        final UserPage userPage = userService.getUsers(page);
+        modelAndView.addObject("users", userPage.getUsers());
+        modelAndView.addObject("pageNumber", userPage.getCurrentPageNumber());
+        modelAndView.addObject("lastPageNumber", userPage.getLastPageNumber() - 1);
+        return modelAndView;
     }
 }

@@ -1,6 +1,7 @@
 package org.arpit.java2blog.service;
 
 import org.arpit.java2blog.model.User;
+import org.arpit.java2blog.model.UserPage;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,4 +20,6 @@ public interface UserService {
 
 
     public void deleteUser(int id);
+
+    public UserPage getUsers(Integer page);
 }
