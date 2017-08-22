@@ -18,5 +18,5 @@ public interface UserDAO {
 
     public UserPage listPage(Integer page);
 
-    public List<User> list (String name);
+    public List<User> list(String name);
 }

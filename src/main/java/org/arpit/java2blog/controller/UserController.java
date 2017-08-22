@@ -68,6 +68,7 @@ public class UserController {
         modelAndView.addObject("lastPageNumber", userPage.getLastPageNumber() - 1);
         return modelAndView;
     }
+
     @RequestMapping(value = "/listByName/{name}")
     public ModelAndView list(final @PathVariable String name) {
         ModelAndView modelAndView = new ModelAndView("list-of-users");
