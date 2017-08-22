@@ -41,6 +41,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
+    public List<User> getUsers(String name) {
+        return userDAO.list(name);
+    }
+
+    @Transactional
     public UserPage getUsers(final Integer page) {
         return userDAO.listPage(page);
     }

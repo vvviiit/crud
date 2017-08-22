@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<h3>User List</h3>
+<h3>User List By Name</h3>
 <c:if test="${!empty users}">
     <table class="tg">
         <tr>
@@ -53,10 +53,6 @@
         </c:forEach>
     </table>
 </c:if>
-<p>Pages</p>
-<c:forEach begin="0" end="${lastPageNumber}" var="val">
-    <a href="${pageContext.request.contextPath}/listPage/${val}">${val} </a>
-</c:forEach>
 
 <p><a href="${pageContext.request.contextPath}/getAllUsers">Home page</a></p>
 

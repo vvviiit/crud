@@ -22,4 +22,6 @@ public interface UserService {
     public void deleteUser(int id);
 
     public UserPage getUsers(Integer page);
+
+    public List<User> getUsers(String name);
 }

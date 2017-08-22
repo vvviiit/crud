@@ -64,5 +64,8 @@
 
 <a href="${pageContext.request.contextPath}/listPage/0">User pages</a><br/>
 
+<input type="text" id="search" placeholder="Search"/>
+<button type="button" onclick="window.open('listByName/' + document.getElementById('search').value)">Go</button>
+
 </body>
 </html>
