@@ -64,30 +64,5 @@
 
 <a href="${pageContext.request.contextPath}/listPage/0">User pages</a><br/>
 
-<h3>User List</h3>
-<c:if test="${!empty listOfUsers}">
-    <table class="tg">
-        <tr>
-            <th width="80">Id</th>
-            <th width="120">User Name</th>
-            <th width="120">Age</th>
-            <th width="120">isAdmin</th>
-            <th width="120">CreatedDate</th>
-            <th width="60">Edit</th>
-            <th width="60">Delete</th>
-        </tr>
-        <c:forEach items="${listOfUsers}" var="user">
-            <tr>
-                <td>${user.id}</td>
-                <td>${user.name}</td>
-                <td>${user.age}</td>
-                <td>${user.admin}</td>
-                <td>${user.createdDate.toString().substring(0,10)}</td>
-                <td><a href="<c:url value='/updateUser/${user.id}' />">Edit</a></td>
-                <td><a href="<c:url value='/deleteUser/${user.id}' />">Delete</a></td>
-            </tr>
-        </c:forEach>
-    </table>
-</c:if>
 </body>
 </html>
