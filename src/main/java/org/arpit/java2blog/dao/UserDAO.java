@@ -21,4 +21,6 @@ public interface UserDAO {
     public List<User> list(String name);
 
     public void deleteAllUsers();
+
+    public int showAverageAge();
 }

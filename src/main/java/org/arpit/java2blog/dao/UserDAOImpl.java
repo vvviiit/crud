@@ -29,6 +29,21 @@ public class UserDAOImpl implements UserDAO {
         return query.list();
     }
 
+    @Override
+    public int showAverageAge() {
+        Session session = this.sessionFactory.getCurrentSession();
+        List Ages = session.createQuery("select age from User").list();
+        if (!Ages.isEmpty()) {
+            int result = 0;
+            for (Object object : Ages) {
+                int a = (Integer) object;
+                result += a;
+            }
+            return result / Ages.size();
+        }
+        else return 0;
+    }
+
     public void deleteAllUsers() {
         Session session = this.sessionFactory.getCurrentSession();
         session.createQuery("delete from User").executeUpdate();

@@ -84,4 +84,10 @@ public class UserController {
         userService.deleteAllUsers();
         return "redirect:/getAllUsers";
     }
+    @RequestMapping(value = "/showAverageAge", method = RequestMethod.GET, headers = "Accept=application/json")
+    public String showAverageAge(Model model){
+        int averageAge= userService.showAverageAge();
+        model.addAttribute("averageAge", averageAge);
+        return "average-age";
+    }
 }

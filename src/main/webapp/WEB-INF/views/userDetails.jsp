@@ -72,5 +72,9 @@
 <a href="${pageContext.request.contextPath}/deleteAllUsers">
     <button>Delete All Users</button>
 </a>
+<p></p>
+<a href="${pageContext.request.contextPath}/showAverageAge">
+    <button>Show Average Age</button>
+</a>
 </body>
 </html>

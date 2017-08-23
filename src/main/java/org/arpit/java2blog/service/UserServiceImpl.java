@@ -41,6 +41,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
+    public int showAverageAge() {
+        return userDAO.showAverageAge();
+    }
+
+    @Transactional
     public void deleteUser(int id) {
         userDAO.deleteUser(id);
     }

@@ -22,4 +22,6 @@ public interface UserService {
     public List<User> getUsers(String name);
 
     public void deleteAllUsers();
+
+    public int showAverageAge();
 }
