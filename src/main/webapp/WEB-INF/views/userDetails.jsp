@@ -62,8 +62,10 @@
 </form:form>
 </br>
 
-<a href="${pageContext.request.contextPath}/listPage/0">User pages</a><br/>
-
+<a href="${pageContext.request.contextPath}/listPage/0">
+    <button>User pages</button>
+</a>
+<p></p>
 <input type="text" id="search" placeholder="Search"/>
 <button type="button" onclick="window.open('listByName/' + document.getElementById('search').value)">Go</button>
 

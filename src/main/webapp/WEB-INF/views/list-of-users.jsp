@@ -54,7 +54,9 @@
     </table>
 </c:if>
 
-<p><a href="${pageContext.request.contextPath}/getAllUsers">Home page</a></p>
+<p><a href="${pageContext.request.contextPath}/getAllUsers">
+    <button>Home page</button>
+</a></p>
 
 </body>
 </html>

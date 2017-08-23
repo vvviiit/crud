@@ -47,18 +47,20 @@
                 <td>${user.age}</td>
                 <td>${user.admin}</td>
                 <td>${user.createdDate.toString().substring(0,10)}</td>
-                <td><a href="<c:url value='/updateUser/${user.id}' />">Edit</a></td>
-                <td><a href="<c:url value='/deleteUser/${user.id}' />">Delete</a></td>
+                <td><a href="<c:url value='/updateUser/${user.id}' />"><button>Edit</button></a></td>
+                <td><a href="<c:url value='/deleteUser/${user.id}' />"><button>Delete</button></a></td>
             </tr>
         </c:forEach>
     </table>
 </c:if>
-<p>Pages</p>
+<p></p>
 <c:forEach begin="0" end="${lastPageNumber}" var="val">
-    <a href="${pageContext.request.contextPath}/listPage/${val}">${val} </a>
+    <a href="${pageContext.request.contextPath}/listPage/${val}"><button>${val}</button></a>
 </c:forEach>
 
-<p><a href="${pageContext.request.contextPath}/getAllUsers">Home page</a></p>
+<p><a href="${pageContext.request.contextPath}/getAllUsers">
+    <button>Home page</button>
+</a></p>
 
 </body>
 </html>
