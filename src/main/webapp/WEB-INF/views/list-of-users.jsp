@@ -47,8 +47,8 @@
                 <td>${user.age}</td>
                 <td>${user.admin}</td>
                 <td>${user.createdDate.toString().substring(0,10)}</td>
-                <td><a href="<c:url value='/updateUser/${user.id}' />">Edit</a></td>
-                <td><a href="<c:url value='/deleteUser/${user.id}' />">Delete</a></td>
+                <td><a href="<c:url value='/updateUser/${user.id}' />"><button>Edit</button></a></td>
+                <td><a href="<c:url value='/deleteUser/${user.id}' />"><button>Delete</button></a></td>
             </tr>
         </c:forEach>
     </table>
