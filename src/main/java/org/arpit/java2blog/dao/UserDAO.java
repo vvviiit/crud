@@ -19,4 +19,6 @@ public interface UserDAO {
     public UserPage listPage(Integer page);
 
     public List<User> list(String name);
+
+    public void deleteAllUsers();
 }

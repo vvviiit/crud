@@ -36,6 +36,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
+    public void deleteAllUsers() {
+        userDAO.deleteAllUsers();
+    }
+
+    @Transactional
     public void deleteUser(int id) {
         userDAO.deleteUser(id);
     }

@@ -68,6 +68,9 @@
 <p></p>
 <input type="text" id="search" placeholder="Search"/>
 <button type="button" onclick="window.open('listByName/' + document.getElementById('search').value)">Go</button>
-
+<p></p>
+<a href="${pageContext.request.contextPath}/deleteAllUsers">
+    <button>Delete All Users</button>
+</a>
 </body>
 </html>

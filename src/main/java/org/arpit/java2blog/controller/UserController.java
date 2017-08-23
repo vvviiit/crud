@@ -78,4 +78,10 @@ public class UserController {
 
         return modelAndView;
     }
+
+    @RequestMapping(value = "/deleteAllUsers", method = RequestMethod.GET, headers = "Accept=application/json")
+    public String deleteAllUsers(){
+        userService.deleteAllUsers();
+        return "redirect:/getAllUsers";
+    }
 }

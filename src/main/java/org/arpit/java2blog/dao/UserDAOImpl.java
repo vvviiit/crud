@@ -29,6 +29,11 @@ public class UserDAOImpl implements UserDAO {
         return query.list();
     }
 
+    public void deleteAllUsers() {
+        Session session = this.sessionFactory.getCurrentSession();
+        session.createQuery("delete from User").executeUpdate();
+    }
+
     public List getAllUsers() {
         Session session = this.sessionFactory.getCurrentSession();
         List userList = session.createQuery("from User").list();
