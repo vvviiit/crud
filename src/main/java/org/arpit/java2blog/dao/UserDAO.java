@@ -23,4 +23,6 @@ public interface UserDAO {
     public void deleteAllUsers();
 
     public int showAverageAge();
+
+    public List<User> getOnlyAdmins();
 }

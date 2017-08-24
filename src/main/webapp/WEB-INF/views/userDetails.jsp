@@ -76,5 +76,9 @@
 <a href="${pageContext.request.contextPath}/showAverageAge">
     <button>Show Average Age</button>
 </a>
+<p></p>
+<a href="${pageContext.request.contextPath}/getOnlyAdmins">
+    <button>Show Admins</button>
+</a>
 </body>
 </html>

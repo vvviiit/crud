@@ -24,4 +24,6 @@ public interface UserService {
     public void deleteAllUsers();
 
     public int showAverageAge();
+
+    public List<User> getOnlyAdmins();
 }

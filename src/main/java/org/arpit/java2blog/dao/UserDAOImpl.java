@@ -44,6 +44,12 @@ public class UserDAOImpl implements UserDAO {
         else return 0;
     }
 
+    @Override
+    public List<User> getOnlyAdmins() {
+        Session session = this.sessionFactory.getCurrentSession();
+        return session.createQuery("from User where isAdmin = true").list();
+    }
+
     public void deleteAllUsers() {
         Session session = this.sessionFactory.getCurrentSession();
         session.createQuery("delete from User").executeUpdate();

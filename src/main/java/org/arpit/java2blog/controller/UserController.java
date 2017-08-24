@@ -90,4 +90,10 @@ public class UserController {
         model.addAttribute("averageAge", averageAge);
         return "average-age";
     }
+
+    @RequestMapping(value = "/getOnlyAdmins")
+    public String getOnlyAdmins(Model model){
+        model.addAttribute("onlyAdmins", this.userService.getOnlyAdmins());
+        return "only-admins";
+    }
 }

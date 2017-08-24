@@ -41,6 +41,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
+    public List<User> getOnlyAdmins() {
+        return userDAO.getOnlyAdmins();
+    }
+
+    @Transactional
     public int showAverageAge() {
         return userDAO.showAverageAge();
     }
