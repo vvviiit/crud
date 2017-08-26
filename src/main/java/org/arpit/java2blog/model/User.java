@@ -25,6 +25,17 @@ public class User {
     @Column
     private Date createdDate;
 
+    @Column
+    private String adress;
+
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
     public int getId() {
         return id;
     }

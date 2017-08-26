@@ -51,6 +51,10 @@
             <td><form:input path="age" size="30" maxlength="30"></form:input></td>
         </tr>
         <tr>
+            <td><form:label path="adress">Adress:</form:label></td>
+            <td><form:input path="adress" size="30" maxlength="30"></form:input> </td>
+        </tr>
+        <tr>
             <td><form:label path="admin">Admin:</form:label></td>
             <td><form:input path="admin" size="30" maxlength="30"></form:input></td>
         </tr>

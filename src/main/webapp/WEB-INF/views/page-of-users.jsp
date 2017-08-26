@@ -35,6 +35,7 @@
             <th width="80">Id</th>
             <th width="120">User Name</th>
             <th width="120">Age</th>
+            <th width="120">Adress</th>
             <th width="120">isAdmin</th>
             <th width="120">CreatedDate</th>
             <th width="60">Edit</th>
@@ -45,6 +46,7 @@
                 <td>${user.id}</td>
                 <td>${user.name}</td>
                 <td>${user.age}</td>
+                <td>${user.adress}</td>
                 <td>${user.admin}</td>
                 <td>${user.createdDate.toString().substring(0,10)}</td>
                 <td><a href="<c:url value='/updateUser/${user.id}' />"><button>Edit</button></a></td>
