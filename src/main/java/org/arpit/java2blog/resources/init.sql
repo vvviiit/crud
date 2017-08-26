@@ -7,3 +7,46 @@ CREATE TABLE IF NOT EXISTS user
   isAdmin BIT(1),
   createdDate TIMESTAMP
 );
+
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Vasya', 27, 1);
+INSERT INTO user (name, age, isAdmin) VALUES ('Petya', 24, 0);
+INSERT INTO user (name, age, isAdmin) VALUES ('Sasha', 20, 1);
