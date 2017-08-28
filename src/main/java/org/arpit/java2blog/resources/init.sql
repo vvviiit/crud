@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS user
   id          INT(8) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   name        VARCHAR(25),
   age         INT(11),
-  address      VARCHAR(60),
+  address     VARCHAR(60),
   isAdmin     BIT(1),
   createdDate TIMESTAMP
 );
